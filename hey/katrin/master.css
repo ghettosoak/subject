@@ -1,0 +1,66 @@
+@import url(../../carrier/type/alexbrush/stylesheet.css);
+::selection {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white; }
+
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: Univers, Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.7rem;
+  color: #3C3C3F; }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: .85em;
+    line-height: 1.5rem; } }
+#master {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px; }
+  #master > div {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    overflow: hidden; }
+    #master > div > div {
+      background-color: white;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px; }
+  #master p {
+    position: relative;
+    float: left; }
+  #master #english {
+    z-index: 2;
+    left: 0px; }
+  #master #duutsch {
+    z-index: 1;
+    right: 0px; }
+  #master #slider {
+    z-index: 1000; }
+    #master #slider .ui-slider-handle {
+      position: absolute;
+      height: 100%;
+      width: 46px;
+      margin-left: -46px;
+      background-color: red;
+      z-index: 100; }
+
+p {
+  margin: 0px 0px 1rem; }
+
+@-moz-document url-prefix() {}
