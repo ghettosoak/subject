@@ -22,45 +22,67 @@ html {
   html {
     font-size: .85em;
     line-height: 1.5rem; } }
-#master {
+#output {
+  position: fixed;
+  height: 50px;
+  width: 100px;
+  left: 0px;
+  top: 0px;
+  z-index: 100000; }
+
+body {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0px;
-  left: 0px; }
-  #master > div {
-    position: fixed;
-    height: 100%;
+  overflow: hidden; }
+  body #master {
+    position: absolute;
+    height: 1300%;
     width: 100%;
     top: 0px;
-    overflow: hidden; }
-    #master > div > div {
-      background-color: white;
+    left: 0px; }
+    body #master #english, body #master #duutsch {
       position: absolute;
-      height: 100%;
+      height: 7.6923%;
       width: 100%;
       top: 0px;
+      background-color: white; }
+      body #master #english .inside, body #master #duutsch .inside {
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px; }
+        body #master #english .inside > div, body #master #duutsch .inside > div {
+          position: relative;
+          padding: 50px;
+          height: 100%;
+          width: 100%;
+          display: table; }
+          body #master #english .inside > div p, body #master #duutsch .inside > div p {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center; }
+    body #master #english {
+      z-index: 2;
       left: 0px; }
-  #master p {
-    position: relative;
-    float: left; }
-  #master #english {
-    z-index: 2;
-    left: 0px; }
-  #master #duutsch {
-    z-index: 1;
-    right: 0px; }
-  #master #slider {
-    z-index: 1000; }
-    #master #slider .ui-slider-handle {
+    body #master #duutsch {
+      z-index: 1;
+      right: 0px; }
+  body #slider {
+    z-index: 1000;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0px; }
+    body #slider .ui-slider-handle {
       position: absolute;
       height: 100%;
       width: 46px;
+      top: 0px;
+      left: 100%;
       margin-left: -46px;
-      background-color: red;
-      z-index: 100; }
-
-p {
-  margin: 0px 0px 1rem; }
+      background-color: red; }
 
 @-moz-document url-prefix() {}
