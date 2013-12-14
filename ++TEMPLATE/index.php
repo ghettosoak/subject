@@ -8,7 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>subject: </title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="++TEMPLATE.css" />
+    <link rel="stylesheet" type="text/css" href="master.css" />
 </head>
 
 <body>
@@ -26,5 +26,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="master.js"></script>
 </body>
 </html>
