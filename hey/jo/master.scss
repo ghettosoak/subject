@@ -1,11 +1,11 @@
 ::selection {
-	background-color:rgba(0,0,0,.75);
-	color:white;
+	background-color:white;
+	color:black;
 }
 
 ::-moz-selection {
-	background-color:rgba(0,0,0,.75);
-	color:white;
+	background-color:white;
+	color:black;
 }
 
 @mixin transition($time, $ease){
@@ -49,9 +49,9 @@
 
 
 html{
-	font-family:Palatino, Georgia, serif;
+	font-family:Georgia, serif;
 	font-size:.85em;
-	line-height:1.5rem;
+	line-height:1.6em;
 	color:#fff;
 }
 
@@ -136,6 +136,7 @@ p{
 	@include transform(scale(2));
 
 	&>div{
+		overflow-x:hidden;
 		.put{
 			height:100%;
 			position:relative;
@@ -146,6 +147,15 @@ p{
 	#top .put{ 
 		@include pt_pb(40px, 0px); 
 		border-bottom:1px #fff solid;
+		&:after{
+			content:'';
+			width:1000px;
+			height:1px;
+			background-color:white;
+			position:absolute;
+			left:100%;
+			top:100%;
+		}
 	}
 	#middle .put{ @include pt_pb(10px, 10px); }
 	#bottom .put{ @include pt_pb(10px, 10px); }
@@ -177,8 +187,8 @@ p{
 
 @media screen and (min-width: 768px) {
 	html{
-		font-size:1.2em;
-		line-height:1.7rem;
+		font-size:1.1em;
+		line-height:1.5em;
 	}
 
 	#switch{
